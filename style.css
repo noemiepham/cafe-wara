@@ -1,0 +1,442 @@
+*{margin: 0; padding: 0;} 
+
+* {
+    /* border-box indique au navigateur de
+     tenir compte de toute bordure et remplissage 
+     dans les valeurs que vous spécifiez pour la largeur 
+     et la hauteur d'un élément. */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ==== Navbar ==== */
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+#Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+ /*    position: fixed; */
+    top: 0;
+    z-index: 999;
+    left: 0;
+    width: 100%;
+    
+}
+/* ================ */
+
+/* ====== Logo  ====== */
+
+.LogoNav {
+    padding-left: 20px;
+    font-size: 40px;
+    color: rgb(252, 252, 252);
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+/* .LogoNav  a:hover {
+    color: #C7A17A;
+    text-decoration: none;
+} */
+/* ================ */
+
+/* ==== Menu Burger ==== */
+/* Custom de mon burger les lignes */
+ .line {
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: silver;
+    margin-bottom: 7px;
+}
+
+.MenuBurger {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+/* ================== */
+
+/* ==== Menu Du Site ==== */
+
+/* Détacher le menu pour le responsive */
+.NavMenu {
+    position: fixed;
+    width: 94%;
+    top: 80px;
+    left: 18px;
+    z-index: 999;
+    background-color: lightblue;
+}
+
+/*  Donner du style aux a ( menu de la navbar ) */
+.NavMenu   a {
+    display: block;
+    text-align: center ;
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+.NavMenu  a:hover {
+    color: #C7A17A;
+}
+
+/* Cacher le menu */
+.cacher {
+    display: none;
+}
+
+.affichageMenu {
+    display: block;
+}
+button {
+    background-color: rgba(255, 235, 205, 0);
+    border: #f9f9fb solid 1px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+}
+
+@media  screen and (min-width : 769px) {
+    .NavMenu {
+        display: block;
+        position: static;
+        width: auto;
+        margin-right: 20px;
+        background: none;
+
+    }
+
+    .NavMenu a {
+        display: inline-block;
+        padding: 15px 20px;
+        color: rgb(252, 249, 249);
+    }
+    .MenuBurger {
+        display: none;
+    }
+
+}
+
+/* ============================================================ */
+
+/* ============================== HEADER ======================== */
+
+#HeaderAccueil{
+    height: 100vh;
+    width: 100%;
+    background-image: url("image/home/backgroundHomepage2.jpeg");
+    background-size: cover;   
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.TextHeaderAccueil {
+  text-align: center;
+    color: #f9f9fb;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+  transform: translate(-50px, -140px); 
+}
+.imagelogo {
+    width: 30%;
+} 
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #C7A17A;
+}
+h4 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: #f9f9fb;
+    margin-bottom: 20px;   
+    }
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: #C7A17A;
+}
+
+/* ============================================================ */
+
+/* ============================== SECTION UNE ======================== */
+
+
+#SectionUne {
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    background-color: #EAE7DE;
+    padding-bottom: 5%;
+    text-align: center;
+  
+}
+#SectionUne p{
+   font-family:'Open Sans', sans-serif;
+   font-weight: lighter;
+   color: rgb(24, 23, 23);
+ 
+}
+
+.readmore{
+    color: #C7A17A;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+h6 {
+text-align: center;
+margin-bottom: 20px;
+font-style: italic;
+color: #C7A17A;
+font-family: 'Open Sans', sans-serif;
+} 
+#SectionUne hr {
+    margin-bottom: 20px;
+}
+
+#SectionUnecontainer .align-items-center {
+    margin-right: 30px;
+}
+.SectionUneImage {
+    width: 100%;
+}
+.divnumero {
+    display: flex;
+}
+.numero {
+    font-family: 'Merriweather', serif;
+    color: #C7A17A;
+    font-style: italic;
+}
+.text  {
+    color: black;
+    font-size: 20px;
+    font-family:'Oswald', sans-serif;
+    font-weight: bold;
+    justify-content: center;
+}
+@media screen and (max-width:799px ) {
+    .DivSectionUne {
+        margin-bottom: 20px;
+    }
+}
+
+/* ============================================================ */
+
+/* ============================== SECTION DEUX ======================== */
+
+#SectionDeux {
+    height: 100vh;
+    width: 100%;
+    background-image: url(image/imagecafe/quangcaobanel.png);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-position: center;
+    margin-bottom: 50px;
+    padding-top: 50px;
+   
+}
+@media screen and (max-width:799px ) {
+    #SectionDeux {
+    height: 0;
+    width: 0;
+    }
+}
+#SectionTrois {
+    height: 50vh;
+    width: 100%;
+    background-image: url(image/imagecafe/quangcao_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-position: center;
+    margin-bottom:5rem;
+    margin-top:5rem;
+   
+}
+
+/* ============================================================ */
+
+/* ============================== SECTION 4 ======================== */
+#SectionQuatre {
+    height: 100vh;
+    width: 100%;
+    background-image: url(image/imagecafe/backgroundmenu.png);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-position: center;
+    margin-bottom:5rem;
+    margin-top:5rem;  
+}
+
+.listMenu {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    
+}
+
+.listcaffee {
+    display: flex;
+}
+.listcaffee{
+    width: 100px;
+    height: 100px;
+}
+
+.nomducafe div {
+    display: flex;
+    justify-content: space-around;
+}
+.SectionDeuxContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.DivTexteSectionDeux {
+    color: bisque; 
+}
+@media screen and (max-width:769px) {
+    .SectionDeuxContainer {
+        flex-direction: column;
+    }
+    .DivTexteSectionDeux {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+button {
+    background-color: #C7A17A;
+    align-items: center;
+}
+ */
+/* ============================================================ */
+
+/* ============================== SECTION 5(2 Bis) ======================== */
+.DivSectionDeuxBis img {
+ width: 30%;
+ margin-bottom: 10px;
+    /* background-color: black;  Retiré le fond pour voir l'image si besoin  */ 
+}
+.DivSectionDeuxBis h3{
+font-family:  'Oswald', sans-serif;
+font-weight: bold;
+margin-bottom: 10px;
+}
+.DivSectionDeuxBis p{
+font-family: 'Open Sans', sans-serif;
+margin-bottom: 10px;
+
+    /* background-color: black;  Retiré le fond pour voir l'image si besoin  */ 
+}
+.SectionDeuxBis {
+    display: flex;
+    justify-content: space-around;
+}
+.DivSectionDeuxBis {
+    width: 300px;
+}
+#SectionTroisBis {
+    padding: 100px 0px;
+    display: grid;
+    place-items: center;
+}
+
+
+/* section deux deux */
+#SectionTroisBis h1 {
+    margin-bottom: 20px;
+}
+.SectionTroisSlider {
+    height: 250px;
+    margin: auto;
+    position: relative;;
+    width: 90%;
+    display: grid;
+    place-items: center;
+    overflow: hidden
+}
+
+.SliderContainer {
+    display: flex;
+     /*  largeur de  SliderContainer = total du nombre de slide qu'on a (4) x largeur du slide (250px)   */
+    width: calc(250px * 8);
+    animation: sliderRokia 30s linear infinite;
+}
+.SliderContainer:hover {
+    /* Définit si l'animation est en cours d'exécution ou en pause. */
+    animation-play-state: paused ;
+}
+/* La règle @keyframes permet aux auteurs de définir les étapes qui composent la séquence d'une animation CSS.
+ */
+ @keyframes sliderRokia {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-250px * 4));
+        
+    }
+}
+
+
+.SlideElement {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+}
+
+.SlideElement img {
+    width: 100%;
+    transition: transform 1s;
+    
+}
+.SlideElement img:hover {
+    transform: translateZ(20px);
+    
+}
+
+/* Gradient Shadows */
+
+.SectionTroisSlider::before,
+.SectionTroisSlider::after{
+    background:  linear-gradient(to right, rgba(255,255,255,1) 0%, rgb(255, 255, 255,0) 100%);
+    content: ' ';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 2;
+}
+
+.SectionTroisSlider::before {
+    left: 0;
+    top: 0;
+}
+.SectionTroisSlider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+/* menu navbar  */

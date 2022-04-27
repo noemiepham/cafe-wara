@@ -251,14 +251,26 @@ font-family: 'Open Sans', sans-serif;
     background-position: center;
     margin-bottom: 50px;
     padding-top: 50px;
-   
-}
-@media screen and (max-width:799px ) {
+
+
+    
+} 
+/*     height: 100vh;
+width: 100%;
+background-image: url("image/home/backgroundHomepage2.jpeg");
+background-repeat: no-repeat;
+background-size: cover;   
+background-position: center;
+} */
+/* @media screen and (max-width:799px ) {
     #SectionDeux {
     height: 0;
     width: 0;
     }
-}
+} */
+
+
+/* ============================================================ */
 #SectionTrois {
     height: 50vh;
     width: 100%;
@@ -270,9 +282,6 @@ font-family: 'Open Sans', sans-serif;
     margin-top:5rem;
    
 }
-
-/* ============================================================ */
-
 /* ============================== SECTION 4 ======================== */
 #SectionQuatre {
     height: 100vh;

@@ -140,8 +140,8 @@ button {
   text-align: center;
     color: #f9f9fb;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 40%;
+    left: 10%;
     
   transform: translate(-50px, -140px); 
 }

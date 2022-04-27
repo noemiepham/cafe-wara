@@ -255,95 +255,44 @@ font-family: 'Open Sans', sans-serif;
 
     
 } 
-/*     height: 100vh;
-width: 100%;
-background-image: url("image/home/backgroundHomepage2.jpeg");
-background-repeat: no-repeat;
-background-size: cover;   
-background-position: center;
-} */
-/* @media screen and (max-width:799px ) {
+@media screen and (max-width:799px ) {
     #SectionDeux {
-    height: 0;
-    width: 0;
+       display: none;
+       visibility: hidden;
     }
-} */
+}
 
 
-/* ============================================================ */
-#SectionTrois {
+/* ==============================SECTION 3============================== */
+
+#SectionTrois  .SectionTroisImage {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* ============================== SECTION 4 ======================== */
+
+#SectionDeux1 {
     height: 50vh;
     width: 100%;
     background-image: url(image/imagecafe/quangcao_1.png);
     background-repeat: no-repeat;
     background-size: cover;   
     background-position: center;
-    margin-bottom:5rem;
-    margin-top:5rem;
-   
-}
-/* ============================== SECTION 4 ======================== */
-#SectionQuatre {
-    height: 100vh;
-    width: 100%;
-    background-image: url(image/imagecafe/backgroundmenu.png);
-    background-repeat: no-repeat;
-    background-size: cover;   
-    background-position: center;
-    margin-bottom:5rem;
-    margin-top:5rem;  
-}
+    margin-bottom: 50px;
+    padding-top: 50px;
 
-.listMenu {
-    display: flex;
-    justify-content: space-between;
-    margin: 2rem;
+}
     
-}
-
-.listcaffee {
-    display: flex;
-}
-.listcaffee{
-    width: 100px;
-    height: 100px;
-}
-
-.nomducafe div {
-    display: flex;
-    justify-content: space-around;
-}
-.SectionDeuxContainer {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.DivTexteSectionDeux {
-    color: bisque; 
-}
-@media screen and (max-width:769px) {
-    .SectionDeuxContainer {
-        flex-direction: column;
-    }
-    .DivTexteSectionDeux {
-        margin-bottom: 20px;
-        text-align: center;
-    }
-}
-
-button {
-    background-color: #C7A17A;
-    align-items: center;
-}
- */
 /* ============================================================ */
 
 /* ============================== SECTION 5(2 Bis) ======================== */
+
 .DivSectionDeuxBis img {
  width: 30%;
  margin-bottom: 10px;
-    /* background-color: black;  Retiré le fond pour voir l'image si besoin  */ 
+    
 }
 .DivSectionDeuxBis h3{
 font-family:  'Oswald', sans-serif;

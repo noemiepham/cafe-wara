@@ -101,6 +101,11 @@ button {
     padding: 10px 20px 10px 20px;
     color: white;
 }
+.buttonjaune {
+    background-color: #C7A17A;
+    border: #C7A17A;
+    
+}
 
 @media  screen and (min-width : 769px) {
     .NavMenu {
@@ -214,6 +219,7 @@ font-family: 'Open Sans', sans-serif;
 #SectionUnecontainer .align-items-center {
     margin-right: 30px;
 }
+
 .SectionUneImage {
     width: 100%;
 }
@@ -257,8 +263,8 @@ font-family: 'Open Sans', sans-serif;
 } 
 @media screen and (max-width:799px ) {
     #SectionDeux {
-       display: none;
-       visibility: hidden;
+        height: 15vh;
+        width: 100%;
     }
 }
 
@@ -280,11 +286,16 @@ font-family: 'Open Sans', sans-serif;
     background-repeat: no-repeat;
     background-size: cover;   
     background-position: center;
-    margin-bottom: 50px;
     padding-top: 50px;
 
 }
-    
+@media screen and (max-width:799px ) {
+    #SectionDeux1 {
+        height: 15vh;
+        width: 100%;
+    }
+}
+
 /* ============================================================ */
 
 /* ============================== SECTION 5(2 Bis) ======================== */
@@ -313,7 +324,7 @@ margin-bottom: 10px;
     width: 300px;
 }
 #SectionTroisBis {
-    padding: 100px 0px;
+    padding: 20px 0px;
     display: grid;
     place-items: center;
 }

@@ -371,7 +371,24 @@ font-family: 'Open Sans', sans-serif;
 }
 
 
+.List-menu ul li {
+    display: flex;
+    margin-bottom: 30px;
+    width: 100%;
+}
 
+.List-menu ul li img {
+    width: 100px;
+    height: 100px;
+}
+.nomeCafe, .explainCafe {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nomeCafe, .explainCafe  h5 {
+    margin-top: 5px;
+}
 
 .line {
     width: 75px;

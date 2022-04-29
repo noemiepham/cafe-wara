@@ -1,0 +1,304 @@
+*{margin: 0; padding: 0;} 
+
+* {
+    /* border-box indique au navigateur de
+     tenir compte de toute bordure et remplissage 
+     dans les valeurs que vous spécifiez pour la largeur 
+     et la hauteur d'un élément. */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ==== Navbar ==== */
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+#Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+ /*    position: fixed; */
+    top: 0;
+    z-index: 999;
+    left: 0;
+    width: 100%;
+    
+}
+/* ================ */
+
+/* ====== Logo  ====== */
+
+.LogoNav {
+    padding-left: 20px;
+    font-size: 40px;
+    color: rgb(252, 252, 252);
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+/* .LogoNav  a:hover {
+    color: #C7A17A;
+    text-decoration: none;
+} */
+/* ================ */
+
+/* ==== Menu Burger ==== */
+/* Custom de mon burger les lignes */
+ .line {
+    display: block;
+    width: 40px;
+    height: 4px;
+    background-color: silver;
+    margin-bottom: 7px;
+}
+
+.MenuBurger {
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+/* ================== */
+
+/* ==== Menu Du Site ==== */
+
+/* Détacher le menu pour le responsive */
+.NavMenu {
+    position: fixed;
+    width: 94%;
+    top: 80px;
+    left: 18px;
+    z-index: 999;
+    background-color: lightblue;
+}
+
+/*  Donner du style aux a ( menu de la navbar ) */
+.NavMenu   a {
+    display: block;
+    text-align: center ;
+    padding: 10px 0;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+.NavMenu  a:hover {
+    color: #C7A17A;
+}
+
+/* Cacher le menu */
+.cacher {
+    display: none;
+}
+
+.affichageMenu {
+    display: block;
+}
+button {
+    background-color: rgba(255, 235, 205, 0);
+    border: #f9f9fb solid 1px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+}
+.buttonjaune {
+    background-color: #C7A17A;
+    border: #C7A17A;
+    
+}
+
+@media  screen and (min-width : 769px) {
+    .NavMenu {
+        display: block;
+        position: static;
+        width: auto;
+        margin-right: 20px;
+        background: none;
+
+    }
+
+    .NavMenu a {
+        display: inline-block;
+        padding: 15px 20px;
+        color: rgb(252, 249, 249);
+    }
+    .MenuBurger {
+        display: none;
+    }
+
+}
+
+/* ============================================================ */
+
+/* ============================== HEADER ======================== */
+
+#HeaderAccueil{
+    height: 100vh;
+    width: 100%;
+    background-image: url("image/home/backgroundHomepage2.jpeg");
+    background-size: cover;   
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+  
+}
+
+#HeaderAccueil::before{
+    background-color: rgba(0, 0, 0, 0.37);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+
+.TextHeaderAccueil {
+  text-align: center;
+    color: #f9f9fb;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    
+  transform: translate(-50px, -140px); 
+}
+.imagelogo {
+    width: 30%;
+} 
+h1 {
+    line-height: 20px;
+}
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #C7A17A;
+}
+h4 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    }
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: #C7A17A;
+}
+
+p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+ 
+
+    display: -webkit-box !important;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+
+
+    margin-top: 20px;
+}
+
+button {
+    background-color: #C7A17A;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: #f9f9fb;
+    color: black;
+}
+
+
+
+/* ============================ */
+
+#SectionCinq {
+background-color: #EAE7DE;
+padding-bottom: 50px;
+padding-top: 40px;
+}
+ .CoverMenu {
+
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+ }
+.CoverMenu {
+    display: block;
+    text-align: center;
+}
+.Wrapper {
+    display: block;
+    justify-content: center;
+}
+
+
+.List-menu ul li {
+  display: flex; 
+    margin-bottom: 30px;
+    width: 100%;
+    color: black;
+}
+
+
+.List-menu ul li img {
+    width: 100px;
+    height: 100px;
+}
+.nomeCafe, .explainCafe {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nomeCafe, .explainCafe  h5 {
+    margin-top: 5px;
+}
+
+
+.line {
+    width: 75px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 2px solid #c7a17a;
+    margin: 5px 0;
+}
+@media screen and (max-width:799px ) {
+    #SectionCinq {
+        height: 200vh;
+        width: 100%;
+    }
+}
+
+
+/* =====================section deux======== */
+
+#SectionDeux {
+    height: 100vh;
+    width: 100%;
+    background-image: url(image/imagecafe/quangcaobanel.png);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-position: center;
+    margin-bottom: 50px;
+    padding-top: 50px;
+
+
+    background-attachment: fixed;
+
+
+
+    
+} 
+@media screen and (max-width:799px ) {
+    #SectionDeux {
+        height: 20vh;
+    }
+}

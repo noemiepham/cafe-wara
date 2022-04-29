@@ -135,7 +135,7 @@ button {
 #HeaderAccueil{
     height: 100vh;
     width: 100%;
-    background-image: url("image/home/backgroundHomepage2.jpeg");
+    background-image: url("image/home/backgroundcafe.jpeg");
     background-size: cover;   
     background-position: center;
     background-repeat: no-repeat;
@@ -308,7 +308,6 @@ font-family: 'Open Sans', sans-serif;
 @media screen and (max-width:799px ) {
     #SectionDeux {
         height: 20vh;
-        width: 100%;
     }
 }
 
@@ -335,8 +334,8 @@ font-family: 'Open Sans', sans-serif;
 }
 @media screen and (max-width:799px ) {
     #SectionDeux1 {
-        height: 15vh;
-        width: 100%;
+        height: 10vh;
+
     }
 }
 
@@ -355,10 +354,9 @@ font-family: 'Open Sans', sans-serif;
 }
  .CoverMenu {
 
-    width: 1300px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
-    z-index: 20;
  }
 .CoverMenu {
     display: block;
@@ -372,10 +370,11 @@ font-family: 'Open Sans', sans-serif;
 
 
 .List-menu ul li {
-    display: flex;
+  display: flex; 
     margin-bottom: 30px;
     width: 100%;
 }
+
 
 .List-menu ul li img {
     width: 100px;
@@ -398,7 +397,12 @@ font-family: 'Open Sans', sans-serif;
     border-bottom: 2px solid #c7a17a;
     margin: 5px 0;
 }
-
+@media screen and (max-width:799px ) {
+    #SectionCinq {
+        height: 200vh;
+        width: 100%;
+    }
+}
 /* ============================== SECTION 5(2 Bis) ======================== */
 
 .DivSectionDeuxBis img {
@@ -508,5 +512,15 @@ margin-bottom: 10px;
     top: 0;
     transform: rotateZ(180deg);
 }
+/* =============================footer  =====================*/
 
+footer {
+    background-color: black;
+    color: #f9f9fb;
+}
+
+footer img {
+    width: 200px;
+    
+}
 /* menu navbar  */

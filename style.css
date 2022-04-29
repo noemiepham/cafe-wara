@@ -1,4 +1,4 @@
-*{margin: 0; padding: 0;} 
+
 
 * {
     /* border-box indique au navigateur de
@@ -80,7 +80,7 @@ body {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: bolder;
     font-family: 'Oswald', sans-serif;
 }
 .NavMenu  a:hover {
@@ -139,8 +139,6 @@ button {
     background-size: cover;   
     background-position: center;
     background-repeat: no-repeat;
-
-    position: relative;
   
 }
 

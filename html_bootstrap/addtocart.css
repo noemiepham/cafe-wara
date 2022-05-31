@@ -1,0 +1,12 @@
+.shop {
+    display: flex;
+
+}
+.shop .shopList {
+    width: 70%;
+    margin-right: 20px;
+}
+
+aside {
+    width: 25%;
+}

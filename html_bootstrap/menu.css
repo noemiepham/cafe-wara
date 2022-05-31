@@ -126,15 +126,13 @@ button {
 }
 
 /* ============================================================ */
-.sectionTrois {
-    background-color: #c4bcbc;
-}
+
 /* ============================== HEADER ======================== */
 
 #HeaderAccueil{
     height: 100vh;
     width: 100%;
-    background-image: url("image/imagecafe/photocafe00005.jpg");
+    background-image: url("../image/home/backgroundHomepage2.jpeg");
     background-size: cover;   
     background-position: center;
     background-repeat: no-repeat;
@@ -164,11 +162,44 @@ button {
 .imagelogo {
     width: 30%;
 } 
-
+h1 {
+    line-height: 20px;
+}
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #C7A17A;
+}
+h4 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    }
+h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: #C7A17A;
+}
 
 p {
-    margin-top: 0;
-    margin-bottom: 5px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+ 
+
+    display: -webkit-box !important;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+
+
+    margin-top: 20px;
 }
 
 button {
@@ -185,117 +216,91 @@ button:hover {
 
 /* ============================ */
 
-
-span {
-    margin-right: 10px;
-    font-size: 20px; 
+#SectionCinq {
+background-color: #EAE7DE;
+padding-bottom: 50px;
+padding-top: 40px;
 }
-.cover-shop-cafe {
-    display: flex;
-}
+ .CoverMenu {
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-.photo {
-
-    width: 250px;
-    height: 250px;
-    background-color: #F5F5F5;
-    margin: 20px;
-    border: 1px solid #F5F5F5 ;
-    display: block;
-    border: 2px solid #F5F5F5;
-    border-radius: 25px;
-    
-}
-
-/* Animation layer photo------ */
-.layerbig{
     width: 100%;
-    height: 100%;
+    margin: 0 auto;
     position: relative;
-    }
-    
-    .layer {
-        width: 100%;
-        height:100%; 
-    }
-    .layer1 {
-        width: 250px;
-        height:250px;
-        background-color: black;
-        opacity: 0;
-        top: 0;
-        left: 0;
-        position: absolute;
-        transition: 0.4s;
-        border: 2px solid rgba(113, 111, 108, 0);
-        border-radius: 25px;
-    }
-    .layerbig:hover .layer1 {
-        opacity: 40%;
-    }
-.Tarif p {
-     color: black;
+ }
+.CoverMenu {
+    display: block;
+    text-align: center;
+}
+.Wrapper {
+    display: block;
+    justify-content: center;
 }
 
-.Tarif p:first-child {
-    color:black;
-}
-.Tarif p:nth-child(2) {
-    color:#C7A17A;
-}
-.Tarif p:nth-child(3) {
-    color:#C7A17A;
-}
-.Tarif p:last-child(1) {
-    font-weight: bold;
-    color:#C7A17A;
+
+.List-menu ul li {
+  display: flex; 
+    margin-bottom: 30px;
+    width: 100%;
+    color: black;
 }
 
-/* columme Right ======================================= */
-/* .sectionDeux {
+
+.List-menu ul li img {
+    width: 100px;
+    height: 100px;
+}
+.nomeCafe, .explainCafe {
     display: flex;
+    justify-content: space-between;
+}
+
+.nomeCafe, .explainCafe  h5 {
+    margin-top: 5px;
+}
+
+
+.line {
+    width: 75px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 2px solid #c7a17a;
+    margin: 5px 0;
+}
+@media screen and (max-width:799px ) {
+    #SectionCinq {
+        height: 200vh;
+        width: 100%;
+    }
+}
+
+
+/* =====================section deux======== */
+
+#SectionDeux {
+    height: 100vh;
+    width: 100%;
+    background-image: url(image/imagecafe/quangcaobanel.png);
+    background-repeat: no-repeat;
+    background-size: cover;   
+    background-position: center;
+    margin-bottom: 50px;
+    padding-top: 50px;
+
+
+    background-attachment: fixed;
+
+
+
+    
 } 
- */
-/* =========================================================== */
-img.Photosmall {
-    width: 20%;
-    border: 1px solid #f5f5f5;
-    border-radius: 10px;
-}
-.photostyle {
-    transition: 0.4s;
-}
-.photostyle img:hover {
-    border: 1px solid #161616;
+@media screen and (max-width:799px ) {
+    #SectionDeux {
+        height: 20vh;
+    }
 }
 
 
-/* button */
-
-.ajouter {
-    color: white;
-    background-color: black;
-}
-.ajouter:hover {
-    background-color: #c4bcbc;
-}
-.Favorite:hover {
-    background-color: #c4bcbc;
-}
-br {
-    margin-bottom: 20px;
-}
-
-.sectionTrois{
-    overflow-x: scroll;
-}
-
-
-/* =============================footer  =====================*/
 
 footer {
     background-color: black;

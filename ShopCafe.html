@@ -36,218 +36,71 @@
 
 
 	<!-- LINK CSS  -->
-	<link rel="stylesheet" href="ShopCafe.css">
+	<link rel="stylesheet" href="css/ShopCafe.css">
 </head>
 
 <body>
 	<!-- 	/* ==============================Header============================== */ -->
-	<header id="HeaderAccueil">
+	<header id="HeaderAccueil" ’’>
 
-		<nav id="Navbar">
+		<div class="menu_nav">
 
-			<!--   Logo Nav -->
-			<a href="./index.html">
-				<h1 class="LogoNav">WARA CAFE</h1>
-
-			</a>
-
-			<!-- Menu Burger -->
-			<div class="MenuBurger">
-				<span class="line"></span>
-				<span class="line"></span>
-				<span class="line"></span>
-			</div>
-
-			<!--  Menu Du Site -->
-			<div class="NavMenu cacher">
-				<a href="index.html">HOME</a>
-				<a href="menu.html">MENU</a>
-				<a href="ShopCafe.html">CAFE SHOP</a>
-				<a href="">ABOUT US</a>
-				<a href="">CONTACT</a>
-				<a href="">|</a>
-				<a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-				<a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
-				<a href=""><i class="fa fa-bars" aria-hidden="true"></i></a>
-
-
-
-			</div>
-		</nav>
+			<a class="logo" href="/"><img src="image/home/cooltext410031263536496.png" alt="logo"></a>
+			<nav>
+				<ul class="nav__links">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="menu.html">MENU</a></li>
+					<li> <a href="ShopCafe.html">SHOP</a></li>
+					<li> <a href="contact.html">CONTACT</a></li>
+					<li>||</li>
+					<li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+					<li><i class="fa fa-search" aria-hidden="true"></i></li>
+				</ul>
+			</nav>
+			<p class="menu cta"><i class="fa fa-bars" aria-hidden="true"></i></p>
+		</div>
 
 		<div class="TextHeaderAccueil">
 			<div>
 				<img class="imagelogo" src="image/home/logowaracafe.png" alt="">
 				<h1 Data-aos="fade-up" data-aos-duration="1000">OUR MENU CAFE & FOOD </h1>
-				<p Data-aos="fade-up" data-aos-duration="2000">Wara is a Vietnamese coffee shop chain and producer and
-					distributor of coffee products.</p>
-				<button Data-aos="fade-up" data-aos-duration="3000">VIEW MORE</button>
+				<p Data-aos="fade-up" data-aos-duration="2000">Wara is a Vietnamese coffee shop chain and producer
+					and distributor of coffee products.</p>
 			</div>
 		</div>
-
 	</header>
+	<div class="overlay">
+		<a class="close" style="color: white;">&times;</a>
+		<div class="overlay__content">
+			<a href="index.html">Home</a>
+			<a href="menu.html">Menu</a>
+			<a href="ShopCafe.css">Shop</a>
+		</div>
+	</div>
 	<main>
-		<section id="favorite" style="text-align: end;">
+		<section id="favorite" class="sectionAddtoCart">
+			<div class="overlay"></div>
+			<ul>
+				<li>
+					<i class="fa fa-heart-o" aria-hidden="true"></i>
+					<span> 0 </span>
+				</li>
+				<li class="cart">
+					<a href="cart.html">
+						<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+						<span> 0 </span>
+					</a>
 
-			<span style=" font-size: 20px"><i class="fa fa-heart-o" aria-hidden="true"></i></span>
-			<span><i class="fa fa-user-o" aria-hidden="true"></i></span>
-			<br>
-			<hr>
-		</section>
-		<section class="sectionDeux container-fluid">
-			<div class="row">
-				<div class=" col-sm-7">
-					<div class="cover-shop-cafe">
-						<div class="Box">
-							<div class="photo">
-								<div class="photoprojet">
-									<div class="layerbig">
-										<img class="layer" src="image/home/cafe vanilla.png" alt="">
-										<div class="layer1"></div>
-									</div>
-								</div>
-							</div>
-							<div class=" Tarif" style="margin-left: 20px">
-									<p>COFFE VANILA</p>
-									<p>Code: CP828236 </p>
-									<P>Origin: Vietnam</P>
-									<p>500 <span>$</span></p>
-							</div>
-						</div>
-						<div class="Box">
-							<div class="photo">
-								<div class="photoprojet">
-									<div class="layerbig">
-										<img class="layer" src="image/home/coffe cherry.png" alt="">
-										<div class=" layer1">
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class=" Tarif" style="margin-left: 20px">
-								<p>COFFE CHERRY</p>
-								<p>Code: CP828236 </p>
-								<P>Origin: Vietnam</P>
-								<p>500 <span>$</span></p>
-						</div>
-					</div>
-				</div>
-				<div class="cover-shop-cafe">
-					<div class="Box">
-						<div class="photo">
-							<div class="photoprojet">
-								<div class="layerbig">
-									<img class="layer" src="image/home/ROBUSTA.png" alt="">
-									<div class="layer1"></div>
-								</div>
-							</div>
-						</div>
-						<div class=" Tarif" style="margin-left: 20px">
-								<p>COFFEE ROBUSTA</p>
-								<p>Code: CP828236 </p>
-								<P>Origin: Vietnam</P>
-								<p>500 <span>$</span></p>
-						</div>
-					</div>
-					<div class="Box">
-						<div class="photo">
-							<div class="photoprojet">
-								<div class="layerbig">
-									<img class="layer" src="image/home/CAFE ROYAL.png" alt="">
-									<div class="layer1"></div>
-								</div>
-							</div>
-						</div>
-						<div class=" Tarif" style="margin-left: 20px">
-								<p>COFFE ROYAL</p>
-								<p>Code: CP828236 </p>
-								<P>Origin: Vietnam</P>
-								<p>500 <span>$</span></p>
-						</div>
-					</div>
-	
-				</div>
-				<div class="cover-shop-cafe">
-					<div class="Box">
-						<div class="photo">
-							<div class="photoprojet">
-								<div class="layerbig">
-									<img class="layer" src="image/home/CAFE ROYAL.png" alt="">
-								</div>
-							</div>
-						</div>
-						<div class=" Tarif" style="margin-left: 20px">
-								<p>COFFE ROYAL DELUXE</p>
-								<p>Code: CP828236 </p>
-								<P>Origin: Vietnam</P>
-								<p>500 <span>$</span></p>
-						</div>
-					</div>
-					<div class="Box">
-						<div class="photo">
-							<div class="photoprojet">
-								<div class="layerbig">
-									<img class="layer" src="image/home/cafe vanilla.png" alt="">
-									<div class="layer1"></div>
-								</div>
-							</div>
-						</div>
-						<div class=" Tarif" style="margin-left: 20px">
-								<p>COFFE VANILA</p>
-								<p>Code: CP828236 </p>
-								<P>Origin: Vietnam</P>
-								<p>500 <span>$</span></p>
-						</div>
-					</div>
-	
-				</div>
-				</div>
-				<div class="col-sm-5">
-					<h1>TOP RATED PRODUCTS</h1>
-					<br>
-					<div class="photostyle">
-						<img class="Photosmall" src="image/home/cafe vanilla.png" alt="">
-						<img class="Photosmall" src="image/home/cafe vanilla.png" alt="">
-						<img class="Photosmall" src="image/home/cafe vanilla.png" alt="">
-						<img class="Photosmall" src="image/home/cafe vanilla.png" alt="">
-						<img class="Photosmall" src="image/home/cafe vanilla.png" alt="">
-					</div>
-	
-					<div class="tailleSneaker">
-	
-					</div>
-					<div>
-						<button class="ajouter">Add to Carte..... <i class="fa fa-shopping-cart"
-								aria-hidden="true"></i></button>
-						<br>
-						<br>
-						<button class="Favorite"> Add to Favorite <i class="fa fa-heart-o" aria-hidden="true"></i> </button>
-					</div>
-				</div>
-			</div>
-		
-		</section>
-		<h1>Another Product</h1>
-		<section class="sectionTrois">
+				</li>
+				<li>
+					<i class="fa fa-user-o" aria-hidden="true">My account</i>
+				</li>
+			</ul>
 
+		</section>
+		<section class="containerAddtocart">
 			<div class="cover-shop-cafe">
-				<div class="diorBox">
-					<div class="photo">
-						<div class="photoprojet">
-							<div class="layerbig">
-								<img class="layer" src="image/home/cafe vanilla.png" alt="">
-								<div class="layer1"></div>
-							</div>
-						</div>
-					</div>
-					<div class=" Tarif" style="margin-left: 20px">
-							<p>COFFE VANILA</p>
-							<p>Code: CP828236 </p>
-							<P>Origin: Vietnam</P>
-							<p>500 <span>$</span></p>
-					</div>
-				</div>
-				<div class="diorBox">
+				<div class="Box">
 					<div class="photo">
 						<div class="photoprojet">
 							<div class="layerbig">
@@ -258,10 +111,16 @@
 					</div>
 					<div class=" Tarif" style="margin-left: 20px">
 						<p>COFFE VANILA</p>
-						<p>Code: CP828236 </p>
-						<P>Origin: Vietnam</P>
-						<p>500 <span>$</span></p>
+						<p>$25,00</p>
 					</div>
+					<!-- ============= addd to cart 1 ========== =====================-->
+					<div class="addtocart">
+						<button href="" id="bt-cart1" class="buttonjaune add-cart cart1">Add to Carte.....</button>
+						<span type="button" onclick="display()">
+							<i class="fa fa-heart" id="fa-heart" style="font-size:30px;"></i>
+							</span>
+					</div>
+					<h1 id="text"></h1>
 				</div>
 				<div class="Box">
 					<div class="photo">
@@ -274,10 +133,16 @@
 					</div>
 					<div class=" Tarif" style="margin-left: 20px">
 						<p>COFFE VANILA</p>
-						<p>Code: CP828236 </p>
-						<P>Origin: Vietnam</P>
-						<p>500 <span>$</span></p>
+						<p>$25,00</p>
 					</div>
+					<!-- ============= addd to cart 1 ========== =====================-->
+					<div class="addtocart">
+						<button href="" id="bt-cart1" class="buttonjaune add-cart cart1">Add to Carte.....</button>
+						<span type="button" onclick="display2()">
+							<i class="fa fa-heart" id="fa-heart"  style="font-size:30px;"></i>
+							</span>
+					</div>
+					<h1 id="text"></h1>
 				</div>
 				<div class="Box">
 					<div class="photo">
@@ -290,10 +155,16 @@
 					</div>
 					<div class=" Tarif" style="margin-left: 20px">
 						<p>COFFE VANILA</p>
-						<p>Code: CP828236 </p>
-						<P>Origin: Vietnam</P>
-						<p>500 <span>$</span></p>
+						<p>$25,00</p>
 					</div>
+					<!-- ============= addd to cart 1 ========== =====================-->
+					<div class="addtocart">
+						<button href="" id="bt-cart1" class="buttonjaune add-cart cart1">Add to Carte.....</button>
+						<span type="button" onclick="display()">
+							<i class="fa fa-heart" style="font-size:30px;"></i>
+							</span>
+					</div>
+					<h1 id="text"></h1>
 				</div>
 				<div class="Box">
 					<div class="photo">
@@ -306,80 +177,50 @@
 					</div>
 					<div class=" Tarif" style="margin-left: 20px">
 						<p>COFFE VANILA</p>
-						<p>Code: CP828236 </p>
-						<P>Origin: Vietnam</P>
-						<p>500 <span>$</span></p>
+						<p>$25,00</p>
 					</div>
+					<!-- ============= addd to cart 1 ========== =====================-->
+					<div class="addtocart">
+						<button href="" id="bt-cart1" class="buttonjaune add-cart cart1">Add to Carte.....</button>
+						<span type="button" onclick="display()">
+							<i class="fa fa-heart" style="font-size:30px;"></i>
+							</span>
+					</div>
+					<h1 id="text"></h1>
 				</div>
-				<div class="Box">
-					<div class="photo">
-						<div class="photoprojet">
-							<div class="layerbig">
-								<img class="layer" src="image/home/cafe vanilla.png" alt="">
-								<div class="layer1"></div>
-							</div>
-						</div>
-					</div>
-					<div class=" Tarif" style="margin-left: 20px">
-						<p>COFFE VANILA</p>
-						<p>Code: CP828236 </p>
-						<P>Origin: Vietnam</P>
-						<p>500 <span>$</span></p>
-					</div>
-				</div>
-				<div class="Box">
-					<div class="photo">
-						<div class="photoprojet">
-							<div class="layerbig">
-								<img class="layer" src="image/home/cafe vanilla.png" alt="">
-								<div class="layer1"></div>
-							</div>
-						</div>
-					</div>
-					<div class=" Tarif" style="margin-left: 20px">
-						<p>COFFE VANILA</p>
-						<p>Code: CP828236 </p>
-						<P>Origin: Vietnam</P>
-						<p>500 <span>$</span></p>
-					</div>
-				</div>
-				<div class="Box">
-					<div class="photo">
-						<div class="photoprojet">
-							<div class="layerbig">
-								<img class="layer" src="image/home/cafe vanilla.png" alt="">
-								<div class="layer1"></div>
-							</div>
-						</div>
-					</div>
-					<div class=" Tarif" style="margin-left: 20px">
-						<p>COFFE VANILA</p>
-						<p>Code: CP828236 </p>
-						<P>Origin: Vietnam</P>
-						<p>500 <span>$</span></p>
-					</div>
-				</div>
-				<div class="Box">
-					<div class="photo">
-						<div class="photoprojet">
-							<div class="layerbig">
-								<img class="layer" src="image/home/cafe vanilla.png" alt="">
-								<div class="layer1"></div>
-							</div>
-						</div>
-					</div>
-					<div class=" Tarif" style="margin-left: 20px">
-						<p>COFFE VANILA</p>
-						<p>Code: CP828236 </p>
-						<P>Origin: Vietnam</P>
-						<p>500 <span>$</span></p>
-
-
-					</div>
-				</div>
-
 			</div>
-
+			<aside class="AddtoCartTotal">
+					<div class="add-to-carte-photo">
+						<img class="layer" src="image/home/cafe vanilla.png" alt="">
+						<img class="layer" src="image/home/cafe vanilla.png" alt="">
+						<img class="layer" src="image/home/cafe vanilla.png" alt="">
+					</div>
+					<hr>
+					<div class="titre-nameOfproduct">
+						<p>NAME OF PRODUCT </p>
+						<p>PRICE: $</p>
+					</div>
+					<div class="nameOfproduct">
+						<div>COFFE VANILA</div>
+						<div>
+							<span class="counter-minus">-</span>
+							<span class="counter-display">(..)</span>
+							<span class="counter-plus">+</span>
+						</div>
+						<div class="total-price">3</div>
+					</div>
+					<hr>
+					<div class="total-nameOfproduct">
+						<p>TOTAL</p>
+						<p class="total">3</p>
+					</div>
+					<!-- ============= addd to cart 1 ========== =====================-->
+					<div class="bt-addtocart">
+						<button id="bt-cart1" class="bt-buynow ">Buy Now</button>
+					</div>
+					<h1 id="text"></h1>
+				</div>
+			</aside>
 		</section>
 	</main>
 
@@ -435,7 +276,7 @@
 			</div>
 		</div>
 	</footer>
-	<script src="./javascript/index.js"></script>
+	<script src="index.js"></script>
 </body>
 <script>
 	AOS.init();

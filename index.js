@@ -64,8 +64,9 @@ function updateDisplay(){
 
 
 /* ========add to cart  counter ======== */
+
 /* ============== */
- let totalprice = document.querySelector('.total-price')
+/*  let totalprice = document.querySelector('.total-price')
 
 
 
@@ -73,7 +74,7 @@ function updateDisplay(){
 
 updateprice()
 
-
+ */
 
 /* ========change color heart ======== */
 
